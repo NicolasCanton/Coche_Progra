@@ -8,7 +8,7 @@ public class CotxeSegonaPart_Nicolas_Canton extends TestCotxe_Nicolas_Canton {
             System.out.println("El cambio de marchas es automático");
         } else
             System.out.println("El cambio de marchas es manual.");
-        return tipuscanvi;
+        return tipuscanvi;dadadadadadadadadadada
     }
 
 }
