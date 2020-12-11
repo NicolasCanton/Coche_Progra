@@ -1,9 +1,9 @@
-public abstract class CocheAbstracto implements InterfaceCoche{
+public abstract class CotxeAbstracte implements InterfaceCotxe{
 
         protected String marca;
         protected String model;
         protected TipusCanvi tipuscanvi;
-        public CocheAbstracto(String marca, String model, TipusCanvi tipuscanvi) {
+        public CotxeAbstracte(String marca, String model, TipusCanvi tipuscanvi) {
             this.marca=marca;
             this.model=model;
             this.tipuscanvi=tipuscanvi;

@@ -1,4 +1,4 @@
-    public enum EstatsMotorCoche {
+    public enum EstatsMotorCotxe {
         EnMarxa,
         Aturat;
     }

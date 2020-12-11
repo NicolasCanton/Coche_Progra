@@ -1,4 +1,4 @@
-public interface InterfaceCoche {
+public interface InterfaceCotxe {
     /**
      * El metode arrancarMotor llançara una excepcio si s'intenta
      * arrancar el motor pero el motor ja esta ences
@@ -10,7 +10,7 @@ public interface InterfaceCoche {
      * segons els possibles valors de l'enum type EstatsMotorCotxe
      * @return
      */
-    public EstatsMotorCoche comprovaMotor();
+    public EstatsMotorCotxe comprovaMotor();
     /**
      * El metode getRevolucions() retornara un sencer corresponent
      * a les revolucions que te el motor. Si el motor esta aturat retornara 0

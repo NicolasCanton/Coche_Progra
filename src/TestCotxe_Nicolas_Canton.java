@@ -1,14 +1,14 @@
-public class Coche_Nicolas_Canton extends CocheAbstracto implements InterfaceCoche {
-    private EstatsMotorCoche estado;
+public class TestCotxe_Nicolas_Canton extends CotxeAbstracte implements InterfaceCotxe {
+    private EstatsMotorCotxe estado;
     private int revolucions = 0;
-    public Coche_Nicolas_Canton(String marca ,String model ,TipusCanvi tipuscanvi) {
+    public TestCotxe_Nicolas_Canton(String marca ,String model ,TipusCanvi tipuscanvi) {
         super(marca ,model ,tipuscanvi);
     }
 
     @Override
     public void arrancarMotor() throws Exception {
-        if (estado == EstatsMotorCoche.Aturat) {
-            this.estado.equals(EstatsMotorCoche.EnMarxa);
+        if (estado == EstatsMotorCotxe.Aturat) {
+            this.estado.equals(EstatsMotorCotxe.EnMarxa);
             System.out.println("Ahora el motor esta encendido.");
         } else {
             throw new Exception("El motor ya esta encendido");
@@ -16,8 +16,8 @@ public class Coche_Nicolas_Canton extends CocheAbstracto implements InterfaceCoc
     }
 
     @Override
-    public EstatsMotorCoche comprovaMotor() {
-        if (estado == EstatsMotorCoche.EnMarxa) {
+    public EstatsMotorCotxe comprovaMotor() {
+        if (estado == EstatsMotorCotxe.EnMarxa) {
             System.out.println("El motor está en marcha. ");
         } else {
             System.out.println("El motor del coche esta apagado. ");
@@ -28,7 +28,7 @@ public class Coche_Nicolas_Canton extends CocheAbstracto implements InterfaceCoc
 
     @Override
     public int getRevolucions() {
-        if (estado.equals(EstatsMotorCoche.EnMarxa)) {
+        if (estado.equals(EstatsMotorCotxe.EnMarxa)) {
             this.revolucions = (int) Math.random() * 6500 + 1;
         } else {
             System.out.println("El motor está apagado. ");
@@ -39,8 +39,8 @@ public class Coche_Nicolas_Canton extends CocheAbstracto implements InterfaceCoc
 
     @Override
     public void aturarMotor() throws Exception {
-        if (estado == EstatsMotorCoche.EnMarxa) {
-            this.estado=EstatsMotorCoche.Aturat;
+        if (estado == EstatsMotorCotxe.EnMarxa) {
+            this.estado=EstatsMotorCotxe.Aturat;
             System.out.println("Ahora el motor está apagado. ");
         } else {
             throw new Exception("El motor ya esta apagado. ");
